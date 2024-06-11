@@ -6,8 +6,26 @@ header{
     display: flex;
     justify-content: space-between;
     color: white;
+    
+    
 }
 
+body{
+    font-family: 'Kufam', cursive;
+}
+
+.bar{
+    background: linear-gradient(to top, rgb(4, 202, 252),rgb(0, 240, 168));
+    color: white;
+    border:thick double white; 
+}
+
+.bar p{
+    text-align: end;
+    height: 30px;
+    margin-top: 3px;
+    animation: animation 1s infinite;
+}
 .oiseau{
     width: 40%;
 }
@@ -20,10 +38,11 @@ nav p{
 .titre{
     display: flex;
 }
+
  .navbar{
   display: flex;
   height: 70px;
-  }
+}
 
 .japon{
     width: 280px;
@@ -98,43 +117,65 @@ footer{
 }
 
 @media screen and (max-width: 768px){
-   .zone1{
-        flex-direction: column;
-    }
-    .japon{
-        width: 200px;
-        height: 200px;
-        margin-left: 40px;
-    }
-    .zone2{
-        flex-direction: column;
-    }
-    .plage{
-        width: 200px;
-        /* height: 200px; */
-        margin-left: 40px;
-    }
-    .zone3{
-        flex-direction: column;
-    }
-    .desert{
-        width: 200px;
-        height: 200px;
-        margin-left: 40px;
-    }
-    footer{
-        flex-direction: column;
-        padding: 50px;
-    }
 
-    .navbar {
-        display: block;
-      
-    }
-    .navbar p{
-        margin: 7px;
-    }
+.zone1{
+flex-direction: column;
 }
 
+body{
+    font-family: 'Kufam', cursive;
+}
+
+.japon{
+     width: 200px;
+    height: 200px;
+     margin-left: 40px;
+ }
+
+.zone2{
+    flex-direction: column;
+}
+
+.plage{
+     width: 200px;
+     height: 200px;
+    margin-left: 40px;
+}
+
+.zone3{
+    flex-direction: column;
+}
+
+.desert{
+    width: 200px;
+    height: 200px;
+    margin-left: 40px;
+ }
+
+footer{
+    flex-direction: column;
+    padding: 50px;
+}
+
+.navbar {
+    display: block;
+ }
+
+.navbar p{
+     margin: 7px;
+}
+    }
 
 
+@keyframes animation{
+    0% {
+        transform: translateX(300px);
+
+    }
+    100%{
+        transform: translateX(-1900px);
+    }
+      
+    
+    
+} 
