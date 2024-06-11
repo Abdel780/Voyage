@@ -24,7 +24,8 @@ body{
     text-align: end;
     height: 30px;
     margin-top: 3px;
-    animation: animation 1s infinite;
+    animation: animation 10s infinite;
+    
 }
 .oiseau{
     width: 40%;
